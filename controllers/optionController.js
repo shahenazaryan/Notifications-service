@@ -14,10 +14,16 @@ class OptionController {
         }
     }
 
-    async getForm3(req, res) {
+    async getForm5(req, res) {
         var obj = {key:"Tiko3",namne:"key"}
         res.status(200).json(obj)
     }
+
+    async getForm7(req, res) {
+        var obj = {key:"Tiko7",namne:"key"}
+        res.status(200).json(obj)
+    }
+    
 }
 
 
