@@ -20,7 +20,7 @@ class OptionController {
     }
 
     async getForm7(req, res) {
-        var obj = {key:"Tiko7",namne:"key"}
+        var obj = {key:"service_c",namne:"key"}
         res.status(200).json(obj)
     }
     
