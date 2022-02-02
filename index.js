@@ -3,13 +3,14 @@ import mongoose from 'mongoose'
 import router from "./router.js";
 
 const app = express()
-const PORT = 3000
+const PORT = 8000
 
 app.use(express.json());      
 app.use(express.urlencoded({extended: true})); 
 app.use('/api', router)
 
 const start = async() =>{
+  
   try{
     await mongoose.connect('mongodb+srv://form:admin@cluster0.h4zf7.mongodb.net/form?retryWrites=true&w=majority', {useUnifiedTopology: true, useNewUrlParser: true})
     app.listen(PORT, () => console.log('SERVER STARTED ON PORT ' + PORT))
